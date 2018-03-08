@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MyBeef</title>
+
+    <!-- Bootstrap -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+    <link rel="icon" href="/faviicon.ico" type="image/x-icon">
+    <link href="/assets/css/simulacaoSimples.css" rel="stylesheet">
+
+
+
+    <!-- HTML5 shim e Respond.js para suporte no IE8 de elementos HTML5 e media queries -->
+    <!-- ALERTA: Respond.js não funciona se você visualizar uma página file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <link href="/assets/css/home.css" rel="stylesheet">
+    <nav>
+            <ul class="main">
+              <li>
+                <a href="/">Home</a>
+                <ul class="drop menu6">
+                  <li><a href="/">MyBeef</a></li>
+                  <li><a href="#">Simular</a></li>
+                  <li><a href="/contato">Contato</a></li>
+                  <li><a href="/login">Login</a></li>
+                  <li><a href="#">Glossário</a></li>
+                  <li><a href="#">Sobre</a></li>
+                </ul>
+              </li>
+              <li><a href="#">MyBeef</a>
+                <ul class="drop menu6">
+                  <li><a href="/login">Minha Conta</a></li>
+                  <li><a href="/login">Propriedades</a></li>
+                  <li><a href="/login">Produção</a></li>
+                  <li><a href="/login">Estoque</a></li>
+                  <li><a href="/login">Receitas</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Simular</a>
+                <ul class="drop menu6">
+                  <li><a href="/simulacaoSimples">Simples</a></li>
+                  <li><a href="/simulacaointensificacao">Intensificação</a></li>
+                </ul>
+              </li>
+              <li><a href="/contato">Contato</a>
+                <ul class="drop menu4">
+                </ul>
+              </li>
+              <li><a href="/login">Login</a>
+                <ul class="drop menu6">
+                  <li><a href="/novoaqui">Novo aqui?</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Glossário</a>
+                <ul class="drop menu6">
+                  <li><a href="#">Portal Indicadores</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Sobre</a>
+                <ul class="drop menu6">
+                  <li><a href="#">Quem somos</a></li>
+                  <li><a href="#">Informações úteis</a></li>
+                <ul class="">
+
+                </ul>
+              </li>
+            </ul>
+    </nav>
+
+<h3><font color = "white">Esta é a tela de simulação do MyBeef. Preencha os campos abaixo e clique em <b>Simular</b> para obter a taxa de desfrute (Kg %) e
+produtividade a partir dos índices de entrada. Após a simulação, para efetuar alterações nos pesos dos animais, descarte de vacas entre outros, clique
+em Sensibilidade e logo após em Calibragem e para ver o estoque e produção animal após a simulação, clique em Detalhes.</font> </h3>
+
+  <div class="container">
+    <div class="donut-chart-block block">
+       <h3><font color = "white"> Taxa de desmame</font></h3>
+        <div class="donut-chart">
+          <div id="section1" class="clip">
+            <div class="item"></div>
+           </div>
+          <div id="section2" class="clip">
+            <div class="item"></div>
+          </div>
+          <div id="section3" class="clip">
+            <div class="item"></div>
+          </div>
+          <div class="center">
+            <span></span>
+            </div>
+        </div>
+      <div class="range-slider">
+         <input type="range" orient="vertical" min="0" max="100"/>
+         <div class="range-slider__bar"></div>
+         <div class="range-slider__thumb"></div>
+      </div>
+        <h3><font color = "white" >Área(ha)</font></h3>
+      <input type="text" data-numbers/>
+  </div>
+
+       <div class="donut-chart-block block">
+         <h3><font color = "white"> Idade de abate em Anos</font></h3>
+         <div class="donut-chart">
+           <div id="section1" class="clip">
+             <div class="item"></div>
+           </div>
+           <div id="section2" class="clip">
+             <div class="item"></div>
+           </div>
+           <div id="section3" class="clip">
+             <div class="item"></div>
+           </div>
+           <div class="center">
+             <span></span>
+           </div>
+         </div>
+         <div class="range-slider">
+            <input type="range" orient="vertical" min="0" max="3" />
+            <div class="range-slider__bar"></div>
+            <div class="range-slider__thumb"></div>
+           </div>
+             <h3><font color = "white" >Taxa de Mortalidade (%)</font></h3>
+           <input type="text" data-numbers >
+       </div>
+
+        <div class="donut-chart-block block">
+          <h3><font color = "white"> Idade de Acasalamento</font></h3>
+          <div class="donut-chart">
+            <div id="section1" class="clip">
+              <div class="item"></div>
+            </div>
+            <div id="section2" class="clip">
+              <div class="item"></div>
+            </div>
+            <div id="section3" class="clip">
+              <div class="item"></div>
+            </div>
+            <div class="center">
+              <span>
+              </span>
+            </div>
+          </div>
+          <div class="range-slider">
+             <input type="range" orient="vertical" min="0" max="3"/>
+             <div class="range-slider__bar"></div>
+             <div class="range-slider__thumb"></div>
+            </div>
+              <h3><font color = "white" >Lotação(UA)</font></h3>
+              <input type="text" data-numbers >
+        </div>
+
+    <div align="center">
+        <a href="/graficossimulacaosimples"><button style="width: 100px; height: 50px" data-label="simular" align="center">Simular</button></a>
+    </div>
+</div>
+<!--https://codepen.io/tammyhart/pen/tqidL-->
+    <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
+    <script src="/assets/js/jquery.mim.js"></script>
+    <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/simulacaoSimples.js"></script>
+  </body>
+</html>

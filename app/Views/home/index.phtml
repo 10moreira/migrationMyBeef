@@ -1,0 +1,78 @@
+<h1>MyBeef</h1>
+
+<link href="/assets/css/home.css" rel="stylesheet">
+
+<!--
+<nav>
+
+  <ul class="main">
+    <li>
+      <a href="#">Home</a>
+      <ul class="drop menu1">
+        <li><a href="#">MyBeef</a></li>
+        <li><a href="#">Simular</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Glossário</a></li>
+        <li><a href="#">Sobre</a></li>
+      </ul>
+    </li>
+    <li><a href="#">MyBeef</a>
+      <ul class="drop menu2">
+        <li><a href="#">Minha Conta</a></li>
+        <li><a href="#">Propriedades</a></li>
+        <li><a href="#">Produção</a></li>
+        <li><a href="#">Estoque</a></li>
+        <li><a href="#">Receitas</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Simular</a>
+      <ul class="drop menu3">
+        <li><a href="#">Simples</a></li>
+        <li><a href="#">Intensificação</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">about</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Contato</a>
+      <ul class="drop menu4">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">news</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">about</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Login</a>
+      <ul class="drop menu5">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">news</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">about</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Glossário</a>
+      <ul class="drop menu6">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">news</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">about</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Sobre</a>
+      <ul class="drop menu7">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">news</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">about</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+!-->
+    <?php foreach ($this->view->posts as $post): ?>
+    <div class="row">
+      <h3 class="h3"><?php echo $post->title; ?></h3>
+      <p class="text-justify"><?php echo $post->content; ?></p>
+    </div>
+  <?php endforeach; ?>
+</div>

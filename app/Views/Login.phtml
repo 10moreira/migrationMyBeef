@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MyBeef</title>
+
+    <!-- Bootstrap -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/home.css" rel="stylesheet">
+
+    <link rel="icon" href="/faviicon.ico" type="image/x-icon">
+
+    <!-- HTML5 shim e Respond.js para suporte no IE8 de elementos HTML5 e media queries -->
+    <!-- ALERTA: Respond.js não funciona se você visualizar uma página file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <link href="/assets/css/home.css" rel="stylesheet">
+    <nav>
+            <ul class="main">
+              <li>
+                <a href="/">Home</a>
+                <ul class="drop menu6">
+                  <li><a href="/">MyBeef</a></li>
+                  <li><a href="#">Simular</a></li>
+                  <li><a href="/contato">Contato</a></li>
+                  <li><a href="/login">Login</a></li>
+                  <li><a href="#">Glossário</a></li>
+                  <li><a href="#">Sobre</a></li>
+                </ul>
+              </li>
+              <li><a href="#">MyBeef</a>
+                <ul class="drop menu6">
+                  <li><a href="/login">Minha Conta</a></li>
+                  <li><a href="/login">Propriedades</a></li>
+                  <li><a href="/login">Produção</a></li>
+                  <li><a href="/login">Estoque</a></li>
+                  <li><a href="/login">Receitas</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Simular</a>
+                <ul class="drop menu6">
+                  <li><a href="/simulacaoSimples">Simples</a></li>
+                  <li><a href="/simulacaointensificacao">Intensificação</a></li>
+                </ul>
+              </li>
+              <li><a href="/contato">Contato</a>
+                <ul class="drop menu4">
+                </ul>
+              </li>
+              <li><a href="/login">Login</a>
+                <ul class="drop menu6">
+                  <li><a href="/novoaqui">Novo aqui?</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Glossário</a>
+                <ul class="drop menu6">
+                  <li><a href="#">Portal Indicadores</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Sobre</a>
+                <ul class="drop menu6">
+                  <li><a href="#">Quem somos</a></li>
+                  <li><a href="#">Informações úteis</a></li>
+                <ul class="">
+
+                </ul>
+              </li>
+            </ul>
+    </nav>
+
+  <div class="container">
+  <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+              <div class="panel-heading">
+                  <div class="panel-title"><h1>Login</h1></div>
+                  <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#">Forgot password?</a></div>
+              </div>
+
+              <div style="padding-top:30px" class="panel-body" >
+
+                  <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+
+                  <form id="loginform" class="form-horizontal" role="form">
+
+                      <div style="margin-bottom: 25px" class="input-group">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                  <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username ou email">
+                              </div>
+
+                      <div style="margin-bottom: 25px" class="input-group">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                  <input id="login-password" type="password" class="form-control" name="password" placeholder="Senha">
+                              </div>
+
+                      <div class="input-group">
+                                <div class="checkbox">
+                                  <label>
+                                    <input id="login-remember" type="checkbox" name="remember" value="1"> <b>Lembre-se de mim da próxima vez.</b>
+                                  </label>
+                                </div>
+                              </div>
+
+                          <div style="margin-top:10px" class="form-group">
+                              <!-- Button -->
+
+                              <div class="col-sm-12 controls">
+                                <a id="btn-login" href="#" class="btn btn-success">Login  </a>
+                                <a id="btn-fblogin" href="#" class="btn btn-primary">Login com Facebook</a>
+
+                              </div>
+                          </div>
+
+                          <div class="form-group">
+                              <div class="col-md-12 control">
+                                  <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                      <b>Ainda não possui conta?</b>
+                                  <a href="/novoaqui" onClick="$('#loginbox').hide(); $('#signupbox').show()">
+                                      <estrong>Clique aqui!</estrong>
+                                  </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+            </div>
+
+    <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
+    <script src="/assets/js/jquery.mim.js"></script>
+    <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
